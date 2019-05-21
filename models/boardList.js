@@ -1,1 +1,1 @@
-module.exports = ['b', 'int']
+module.exports = ['b', 'int', 'bb', 'x']

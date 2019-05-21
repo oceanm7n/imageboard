@@ -3,7 +3,9 @@ const Schema = mongoose.Schema;
 
 const ReplySchema = new Schema({
     text: String,
-    delete_password: String,
+    delete_password: {
+        type: String
+    },
     created_on: {
         type: Date,
         default: Date.now()
@@ -28,7 +30,9 @@ const ThreadSchema = new Schema({
         type: Boolean,
         default: false
     },
-    delete_password: String,
+    delete_password: {
+        type: String
+    },
     replies: [ReplySchema]
 });
 

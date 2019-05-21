@@ -34,6 +34,7 @@ mongoose
     .then(() => console.log('MongoDB connected successfully...'))
     .catch(err => console.log(err)); 
 
+
 // 404 Middleware
 app.use((req, res, next) => {
     res
@@ -41,7 +42,6 @@ app.use((req, res, next) => {
         .type('text')
         .send('Not found');
 });
-
 
 app.listen(port || 3000, () => {
     console.log(`Server listening on port ${port}`);
